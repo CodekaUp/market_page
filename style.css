@@ -1,0 +1,162 @@
+body
+{
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+body::before
+{
+    content: "";
+    background-color: rgba(255,255,255,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.box
+{
+    height: 500px;
+    width: 350px;
+    margin: 50px;
+    box-shadow: 0 0 20px 1px #AEABAB ;
+    border-radius: 10%;
+    text-align:right;
+}
+.item
+{
+    height: 200px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 10%;
+    border-radius: 5%;
+    box-shadow: 0 0 10px 3px #b6b6b6;
+}
+#headphones
+{
+    background-image: url("image/headphones_black.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#controller
+{
+    background-image: url("image/controller_black.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#phone
+{
+    background-image: url("image/phone_black.png");
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.toys
+{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button
+{ 
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 75px;
+    height: 40px;
+    float: left;
+    background-color: white;
+    border: none;
+    border-radius: 10%;
+    font-family:'Oswald', sans-serif;
+    font-size:13px;
+    text-transform: uppercase;
+}
+button:hover
+{
+    cursor: pointer;
+}
+button:focus
+{
+    background-color: #FEDFD2;
+    cursor: pointer;
+}
+#color
+{
+    margin-left: 10px;
+    margin-top: 30px;
+    float: left;
+    font-family:'Oswald', sans-serif;
+    font-size:16px;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px gray;
+    height: 20px;
+    text-align: center;
+    width: 150px;
+}
+span
+{
+    margin-top: 30px;
+    margin-right: 120px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-family:'Oswald', sans-serif;
+    font-size:40px;
+    text-transform: uppercase;
+}
+img
+{
+    width: 30px;
+    height: 30px;
+    position: center;
+}
+.buying
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#buy
+{
+    background-color: white;
+    width: 70px;
+    height: 40px;
+}
+#buy:focus
+{
+    background-color: #FEDFD2;
+}
+#addToCart
+{
+    background-color:white;
+    background-image: url("image/add-to-cart_nocolor.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+    width: 70px;
+    height: 40px;
+}
+#addToCart:focus
+{
+    background-image: url("image/add-to-cart.png");
+}
+#favorite
+{
+    background-color: white;
+    background-image: url("image/heart_nocolor.png");
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
+    width: 70px;
+    height: 40px;
+}
+#favorite:focus
+{
+    background-image: url("image/heart.png");
+}
